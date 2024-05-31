@@ -3,7 +3,9 @@
 	<head>
 		<title>F1 CARS EVOLUTION</title>
 		<meta charste="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="./CSS/one_page_website.css">
+		<script src="./JS/one_page_website.js" defer></script>
 	</head>
 	<body>
 		<!--NAV-->
@@ -50,7 +52,7 @@
 				<!--image1-->
 				<div>
 					<div class="flex">
-						<img src="./images/f1 cars/1990.jpg">
+						<img src="./images/f1 cars/1990.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
 							<div>
 								<h1></h1>
 								<p>This is from the year 1990</P>
@@ -62,7 +64,7 @@
 				<!--image2-->
 				<div>
 					<div class="flex">
-						<img src="./images/f1 cars/2000.jpg">
+						<img src="./images/f1 cars/2000.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
 							<div>
 								<h1></h1>
 								<p>This is from the year 1990</P>
@@ -74,7 +76,7 @@
 				<!--image3-->
 				<div>
 					<div class="flex">
-						<img src="./images/f1 cars/2010.jpg">
+						<img src="./images/f1 cars/2010.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
 							<div>
 								<h1></h1>
 								<p>This is from the year 1990</P>
@@ -86,7 +88,7 @@
 				<!--image4-->
 				<div>
 					<div class="flex">
-						<img src="./images/f1 cars/2015.jpg">
+						<img src="./images/f1 cars/2015.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
 							<div>
 								<h1></h1>
 								<p>This is from the year 1990</P>
@@ -98,7 +100,7 @@
 				<!--image5-->
 				<div>
 					<div class="flex">
-						<img src="./images/f1 cars/2019.jpg">
+						<img src="./images/f1 cars/2019.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
 							<div>
 								<h1></h1>
 								<p>This is from the year 1990</P>
@@ -110,7 +112,7 @@
 				<!--image6-->
 				<div>
 					<div class="flex">
-						<img src="./images/f1 cars/2022.jpg">
+						<img src="./images/f1 cars/2022.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
 							<div>
 								<h1></h1>
 								<p>This is from the year 1990</P>
@@ -120,8 +122,82 @@
 				<!--End image6-->
 			</div>
 		</div>
+
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		
+			<div class="mySlides">
+				<div class="numbertext">1 / 6</div>
+				<img src="./images/f1 cars/1990.jpg" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">2 / 6</div>
+				<img src="./images/f1 cars/2000.jpg" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">3 / 6</div>
+				<img src="./images/f1 cars/2010.jpg" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">4 / 6</div>
+				<img src="./images/f1 cars/2015.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">5 / 6</div>
+				<img src="./images/f1 cars/2019.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">6 / 6</div>
+				<img src="./images/f1 cars/2022.jpg" style="width:100%">
+			</div>
+		
+			<!-- Next/previous controls -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+			<!-- Caption text -->
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+		
+			<!-- Thumbnail image controls -->
+			<div class="column">
+				<img class="demo" src="./images/f1 cars/1990.jpg" onclick="currentSlide(1)" alt="MCLAREN">
+			</div>
+		
+			<div class="column">
+				<img class="demo" src="./images/f1 cars/2000.jpg" onclick="currentSlide(2)" alt="JORDAN">
+			</div>
+		
+			<div class="column">
+				<img class="demo" src="./images/f1 cars/2010.jpg" onclick="currentSlide(3)" alt="REDBULL">
+			</div>
+		
+			<div class="column">
+				<img class="demo" src="./images/f1 cars/2015.jpg" onclick="currentSlide(4)" alt="FERRARI">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/f1 cars/2019.jpg" onclick="currentSlide(4)" alt="REDBULL">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="./images/f1 cars/2022.jpg" onclick="currentSlide(4)" alt="FERRARI">
+			</div>
+			</div>
+		</div>
+
 		</section>
 		<!--END GALLERY-->
+
+		
 		
 		<!--CONTACTS-->
 		<section>
